@@ -6,7 +6,7 @@
      https://formspree.io (or similar) and paste the endpoint below,
      e.g. "https://formspree.io/f/abcdwxyz".
      While empty, the form falls back to opening the visitor's e-mail app. */
-  var FORM_ENDPOINT = "";
+  var FORM_ENDPOINT = "https://formspree.io/f/moeewbva";
   var CONTACT_EMAIL = "info@helvetiapixel.ch";
 
   var LANGS = ["en", "de", "fr", "it"];

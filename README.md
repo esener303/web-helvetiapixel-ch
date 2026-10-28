@@ -30,10 +30,7 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Contact form
 
-GitHub Pages can't process forms. Two modes:
-
-1. **Default (no setup):** the form opens the visitor's e-mail app with a pre-filled message to info@helvetiapixel.ch.
-2. **Recommended:** create a free form at [Formspree](https://formspree.io) that delivers to info@helvetiapixel.ch, then paste its endpoint into `FORM_ENDPOINT` in `assets/js/main.js`. Submissions are then sent in the background, with translated success and error messages. A honeypot field (`_gotcha`) filters basic spam.
+GitHub Pages can't process forms, so submissions go through [Formspree](https://formspree.io) (endpoint `FORM_ENDPOINT` in `assets/js/main.js`), which delivers them to info@helvetiapixel.ch. Success and error messages are translated, and a honeypot field (`_gotcha`) filters basic spam. If `FORM_ENDPOINT` is emptied, the form falls back to opening the visitor's e-mail app.
 
 ## Deploy to GitHub Pages
 
@@ -48,6 +45,6 @@ GitHub Pages can't process forms. Two modes:
 ## Before going live
 
 - If Helvetia Pixel gets entered in the commercial register, add the UID (CHE-xxx.xxx.xxx) to the address block in `impressum.html`.
-- The privacy policy says contact-form submissions go through Formspree. If you don't set up Formspree, remove that sentence from `pr.s3.text` in `assets/js/i18n-legal.js` (all four languages). If you add analytics or any other external service, update the policy as well.
+- If you add analytics or any other external service, update the privacy policy (`assets/js/i18n-legal.js`).
 - Have the legal texts checked by a professional if in doubt. They are a sensible starting template, not legal advice.
 - Replace the example projects in "Selected Work" with real case studies when you have them.
