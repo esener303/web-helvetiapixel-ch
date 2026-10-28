@@ -285,3 +285,10 @@ a.work-card:hover h3 { color: var(--navy-2); }
 @media (max-width: 1080px) { .values { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 900px) { .paths { grid-template-columns: 1fr; gap: 32px; } }
 @media (max-width: 600px) { .values { grid-template-columns: 1fr; } }
+
+/* ---------- Refinements: two-line hero headline, migration emphasis ---------- */
+.hero-inner { grid-template-columns: 1.12fr .88fr; }
+.hero h1 { font-size: clamp(2.1rem, 3.5vw, 2.95rem); line-height: 1.12; }
+.path-note { display: flex; gap: 10px; align-items: flex-start; margin: -6px 0 20px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, .16); font-size: .88rem; font-weight: 600; color: #fff; }
+.path-note::before { content: ""; flex: none; width: 18px; height: 18px; margin-top: 1px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z' fill='none' stroke='%23ffffff' stroke-width='1.8' stroke-linejoin='round'/%3E%3Cpath d='M9 12l2 2 4-4' fill='none' stroke='%23ffffff' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat; }
+@media (min-width: 901px) { .path.featured { transform: translateY(-10px); } }
