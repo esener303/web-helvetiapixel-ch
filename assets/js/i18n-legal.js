@@ -1,0 +1,157 @@
+/* Translations for impressum.html and privacy.html, merged into window.I18N.
+   Load after i18n.js. */
+(function () {
+  var legal = {
+    en: {
+      "footer.legal": "Legal",
+      "legal.back": "Back to homepage",
+      "legal.updated": "Last updated: October 2026",
+      "footer.impressum": "Legal notice",
+      "footer.privacy": "Privacy policy",
+      "form.privacyLink": "Privacy policy",
+
+      "imp.meta": "Legal notice (Impressum) — Helvetia Pixel",
+      "imp.title": "Legal notice (Impressum)",
+      "imp.ownerTitle": "Responsible for this website",
+      "imp.liabTitle": "Disclaimer",
+      "imp.liabText": "We check the content of this website carefully, but cannot guarantee that it is accurate, complete or up to date. Liability claims for damages resulting from the use of the information provided are excluded to the extent permitted by law.",
+      "imp.linksTitle": "Links to third-party websites",
+      "imp.linksText": "We are not responsible for the content of external websites linked from this site. Their operators are solely responsible for them.",
+      "imp.copyTitle": "Copyright",
+      "imp.copyText": "All texts, images and graphics on this website belong to Helvetia Pixel unless stated otherwise. Any reproduction requires our prior written consent.",
+
+      "pr.meta": "Privacy policy — Helvetia Pixel",
+      "pr.title": "Privacy policy",
+      "pr.intro": "This privacy policy explains how Helvetia Pixel collects and processes personal data when you visit this website or contact us. We comply with the Swiss Federal Act on Data Protection (FADP/nDSG) and, where applicable, the EU General Data Protection Regulation (GDPR).",
+      "pr.s1.title": "1. Controller",
+      "pr.s1.text": "The controller responsible for processing your personal data is:",
+      "pr.s2.title": "2. Hosting and server logs",
+      "pr.s2.text": "This website is hosted on GitHub Pages, a service of GitHub, Inc. (USA). When you visit the site, GitHub automatically processes technical data such as your IP address, the date and time of access and your browser information in order to deliver the website and protect it against abuse. This data may be processed in the USA. Such transfers rely on appropriate safeguards, such as the Swiss-U.S. Data Privacy Framework or standard contractual clauses.",
+      "pr.s3.title": "3. Contact form and e-mail",
+      "pr.s3.text": "When you contact us via the contact form or by e-mail, we process the data you provide (name, e-mail address, company, message and preferred language) solely to answer your inquiry and, where applicable, to prepare an offer. Form submissions are transmitted via the form service Formspree (Formspree, Inc., USA), which forwards them to us by e-mail. We keep your data only as long as necessary to handle your inquiry or as required by law. Under the GDPR, the legal basis is Art. 6(1)(b) (pre-contractual measures) and Art. 6(1)(f) (legitimate interest in answering inquiries).",
+      "pr.s4.title": "4. Cookies, tracking and local storage",
+      "pr.s4.text": "This website does not use cookies, tracking or analytics tools. Your language choice is stored only in your browser's local storage so that the site remembers it. This information never leaves your device.",
+      "pr.s5.title": "5. Third-party content",
+      "pr.s5.text": "We do not load fonts, scripts or other content from third-party servers.",
+      "pr.s6.title": "6. Your rights",
+      "pr.s6.text": "You have the right to request information about your personal data, to have it corrected or deleted, to object to its processing and, where applicable, to receive your data in a common electronic format. To exercise these rights, contact us at info@helvetiapixel.ch. You can also lodge a complaint with the Federal Data Protection and Information Commissioner (FDPIC) or, if you are in the EU, with your local data protection authority.",
+      "pr.s7.title": "7. Changes",
+      "pr.s7.text": "We may update this privacy policy at any time. The version published on this website applies."
+    },
+
+    de: {
+      "footer.legal": "Rechtliches",
+      "legal.back": "Zurück zur Startseite",
+      "legal.updated": "Stand: Oktober 2026",
+      "footer.impressum": "Impressum",
+      "footer.privacy": "Datenschutz",
+      "form.privacyLink": "Datenschutzerklärung",
+
+      "imp.meta": "Impressum — Helvetia Pixel",
+      "imp.title": "Impressum",
+      "imp.ownerTitle": "Verantwortlich für diese Website",
+      "imp.liabTitle": "Haftungsausschluss",
+      "imp.liabText": "Wir prüfen die Inhalte dieser Website sorgfältig, übernehmen jedoch keine Gewähr für deren Richtigkeit, Vollständigkeit und Aktualität. Haftungsansprüche für Schäden, die aus der Nutzung der bereitgestellten Informationen entstehen, sind im gesetzlich zulässigen Rahmen ausgeschlossen.",
+      "imp.linksTitle": "Links zu Websites Dritter",
+      "imp.linksText": "Für die Inhalte externer Websites, auf die wir verlinken, sind wir nicht verantwortlich. Dafür sind ausschliesslich deren Betreiber verantwortlich.",
+      "imp.copyTitle": "Urheberrecht",
+      "imp.copyText": "Alle Texte, Bilder und Grafiken auf dieser Website gehören Helvetia Pixel, sofern nicht anders angegeben. Jede Vervielfältigung bedarf unserer vorherigen schriftlichen Zustimmung.",
+
+      "pr.meta": "Datenschutzerklärung — Helvetia Pixel",
+      "pr.title": "Datenschutzerklärung",
+      "pr.intro": "Diese Datenschutzerklärung erläutert, wie Helvetia Pixel Personendaten bearbeitet, wenn Sie diese Website besuchen oder mit uns Kontakt aufnehmen. Wir halten uns an das Schweizer Datenschutzgesetz (DSG/nDSG) und, soweit anwendbar, an die EU-Datenschutz-Grundverordnung (DSGVO).",
+      "pr.s1.title": "1. Verantwortliche Stelle",
+      "pr.s1.text": "Verantwortlich für die Bearbeitung Ihrer Personendaten ist:",
+      "pr.s2.title": "2. Hosting und Server-Logs",
+      "pr.s2.text": "Diese Website wird über GitHub Pages gehostet, einen Dienst der GitHub, Inc. (USA). Beim Besuch der Website verarbeitet GitHub automatisch technische Daten wie Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs sowie Browser-Informationen, um die Website auszuliefern und vor Missbrauch zu schützen. Diese Daten können in den USA bearbeitet werden. Solche Übermittlungen stützen sich auf geeignete Garantien wie das Swiss-U.S. Data Privacy Framework oder Standardvertragsklauseln.",
+      "pr.s3.title": "3. Kontaktformular und E-Mail",
+      "pr.s3.text": "Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, bearbeiten wir die von Ihnen angegebenen Daten (Name, E-Mail-Adresse, Firma, Nachricht und bevorzugte Sprache) ausschliesslich zur Beantwortung Ihrer Anfrage und gegebenenfalls zur Erstellung einer Offerte. Formulareingaben werden über den Formulardienst Formspree (Formspree, Inc., USA) übermittelt, der sie per E-Mail an uns weiterleitet. Wir bewahren Ihre Daten nur so lange auf, wie es für die Bearbeitung Ihrer Anfrage nötig oder gesetzlich vorgeschrieben ist. Rechtsgrundlage nach DSGVO sind Art. 6 Abs. 1 lit. b (vorvertragliche Massnahmen) und Art. 6 Abs. 1 lit. f (berechtigtes Interesse an der Beantwortung von Anfragen).",
+      "pr.s4.title": "4. Cookies, Tracking und lokaler Speicher",
+      "pr.s4.text": "Diese Website verwendet keine Cookies, kein Tracking und keine Analyse-Tools. Ihre Sprachwahl wird ausschliesslich im lokalen Speicher Ihres Browsers abgelegt, damit die Website sie sich merkt. Diese Information verlässt Ihr Gerät nicht.",
+      "pr.s5.title": "5. Inhalte Dritter",
+      "pr.s5.text": "Wir laden keine Schriften, Skripte oder sonstigen Inhalte von Servern Dritter.",
+      "pr.s6.title": "6. Ihre Rechte",
+      "pr.s6.text": "Sie haben das Recht, Auskunft über Ihre Personendaten zu verlangen, diese berichtigen oder löschen zu lassen, der Bearbeitung zu widersprechen und, soweit anwendbar, Ihre Daten in einem gängigen elektronischen Format zu erhalten. Wenden Sie sich dazu an info@helvetiapixel.ch. Zudem können Sie sich beim Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten (EDÖB) oder, falls Sie sich in der EU befinden, bei Ihrer zuständigen Aufsichtsbehörde beschweren.",
+      "pr.s7.title": "7. Änderungen",
+      "pr.s7.text": "Wir können diese Datenschutzerklärung jederzeit anpassen. Es gilt die auf dieser Website veröffentlichte Fassung."
+    },
+
+    fr: {
+      "footer.legal": "Informations légales",
+      "legal.back": "Retour à l'accueil",
+      "legal.updated": "Dernière mise à jour : octobre 2026",
+      "footer.impressum": "Mentions légales",
+      "footer.privacy": "Confidentialité",
+      "form.privacyLink": "Politique de confidentialité",
+
+      "imp.meta": "Mentions légales — Helvetia Pixel",
+      "imp.title": "Mentions légales",
+      "imp.ownerTitle": "Responsable de ce site",
+      "imp.liabTitle": "Exclusion de responsabilité",
+      "imp.liabText": "Nous vérifions soigneusement le contenu de ce site, mais ne pouvons garantir son exactitude, son exhaustivité ni son actualité. Toute responsabilité pour des dommages résultant de l'utilisation des informations fournies est exclue dans les limites permises par la loi.",
+      "imp.linksTitle": "Liens vers des sites tiers",
+      "imp.linksText": "Nous ne sommes pas responsables du contenu des sites externes vers lesquels nous renvoyons. Leurs exploitants en sont seuls responsables.",
+      "imp.copyTitle": "Droits d'auteur",
+      "imp.copyText": "Sauf mention contraire, tous les textes, images et graphiques de ce site appartiennent à Helvetia Pixel. Toute reproduction nécessite notre accord écrit préalable.",
+
+      "pr.meta": "Politique de confidentialité — Helvetia Pixel",
+      "pr.title": "Politique de confidentialité",
+      "pr.intro": "La présente politique explique comment Helvetia Pixel traite les données personnelles lorsque vous visitez ce site ou nous contactez. Nous respectons la loi fédérale suisse sur la protection des données (LPD/nLPD) et, le cas échéant, le Règlement général sur la protection des données de l'UE (RGPD).",
+      "pr.s1.title": "1. Responsable du traitement",
+      "pr.s1.text": "Le responsable du traitement de vos données personnelles est :",
+      "pr.s2.title": "2. Hébergement et journaux serveur",
+      "pr.s2.text": "Ce site est hébergé sur GitHub Pages, un service de GitHub, Inc. (États-Unis). Lors de votre visite, GitHub traite automatiquement des données techniques telles que votre adresse IP, la date et l'heure d'accès et des informations sur votre navigateur, afin de fournir le site et de le protéger contre les abus. Ces données peuvent être traitées aux États-Unis. Ces transferts reposent sur des garanties appropriées, comme le Swiss-U.S. Data Privacy Framework ou des clauses contractuelles types.",
+      "pr.s3.title": "3. Formulaire de contact et e-mail",
+      "pr.s3.text": "Lorsque vous nous contactez via le formulaire ou par e-mail, nous traitons les données que vous fournissez (nom, adresse e-mail, entreprise, message et langue préférée) uniquement pour répondre à votre demande et, le cas échéant, établir une offre. Les envois du formulaire transitent par le service Formspree (Formspree, Inc., États-Unis), qui nous les transmet par e-mail. Nous conservons vos données aussi longtemps que nécessaire au traitement de votre demande ou que la loi l'exige. Au sens du RGPD, la base légale est l'art. 6, al. 1, let. b (mesures précontractuelles) et let. f (intérêt légitime à répondre aux demandes).",
+      "pr.s4.title": "4. Cookies, suivi et stockage local",
+      "pr.s4.text": "Ce site n'utilise ni cookies, ni outils de suivi ou d'analyse. Votre choix de langue est enregistré uniquement dans le stockage local de votre navigateur afin que le site s'en souvienne. Cette information ne quitte jamais votre appareil.",
+      "pr.s5.title": "5. Contenus de tiers",
+      "pr.s5.text": "Nous ne chargeons ni polices, ni scripts, ni autres contenus depuis des serveurs tiers.",
+      "pr.s6.title": "6. Vos droits",
+      "pr.s6.text": "Vous avez le droit d'obtenir des informations sur vos données personnelles, de les faire rectifier ou effacer, de vous opposer à leur traitement et, le cas échéant, de les recevoir dans un format électronique courant. Pour exercer ces droits, écrivez-nous à info@helvetiapixel.ch. Vous pouvez également déposer une plainte auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT) ou, si vous êtes dans l'UE, auprès de votre autorité de contrôle.",
+      "pr.s7.title": "7. Modifications",
+      "pr.s7.text": "Nous pouvons modifier cette politique à tout moment. La version publiée sur ce site fait foi."
+    },
+
+    it: {
+      "footer.legal": "Informazioni legali",
+      "legal.back": "Torna alla home",
+      "legal.updated": "Ultimo aggiornamento: ottobre 2026",
+      "footer.impressum": "Note legali",
+      "footer.privacy": "Privacy",
+      "form.privacyLink": "Informativa sulla privacy",
+
+      "imp.meta": "Note legali — Helvetia Pixel",
+      "imp.title": "Note legali",
+      "imp.ownerTitle": "Responsabile di questo sito",
+      "imp.liabTitle": "Esclusione di responsabilità",
+      "imp.liabText": "Verifichiamo con cura i contenuti di questo sito, ma non possiamo garantirne l'esattezza, la completezza o l'attualità. Ogni responsabilità per danni derivanti dall'uso delle informazioni fornite è esclusa nei limiti consentiti dalla legge.",
+      "imp.linksTitle": "Link a siti di terzi",
+      "imp.linksText": "Non siamo responsabili dei contenuti dei siti esterni a cui rimandiamo. Ne rispondono esclusivamente i rispettivi gestori.",
+      "imp.copyTitle": "Diritti d'autore",
+      "imp.copyText": "Salvo diversa indicazione, tutti i testi, le immagini e la grafica di questo sito appartengono a Helvetia Pixel. Qualsiasi riproduzione richiede il nostro previo consenso scritto.",
+
+      "pr.meta": "Informativa sulla privacy — Helvetia Pixel",
+      "pr.title": "Informativa sulla privacy",
+      "pr.intro": "La presente informativa spiega come Helvetia Pixel tratta i dati personali quando visiti questo sito o ci contatti. Rispettiamo la legge federale svizzera sulla protezione dei dati (LPD/nLPD) e, ove applicabile, il Regolamento generale sulla protezione dei dati dell'UE (GDPR).",
+      "pr.s1.title": "1. Titolare del trattamento",
+      "pr.s1.text": "Il titolare del trattamento dei tuoi dati personali è:",
+      "pr.s2.title": "2. Hosting e log del server",
+      "pr.s2.text": "Questo sito è ospitato su GitHub Pages, un servizio di GitHub, Inc. (USA). Quando visiti il sito, GitHub tratta automaticamente dati tecnici come il tuo indirizzo IP, la data e l'ora di accesso e le informazioni sul browser, per fornire il sito e proteggerlo da abusi. Questi dati possono essere trattati negli USA. Tali trasferimenti si basano su garanzie adeguate, come lo Swiss-U.S. Data Privacy Framework o le clausole contrattuali standard.",
+      "pr.s3.title": "3. Modulo di contatto ed e-mail",
+      "pr.s3.text": "Quando ci contatti tramite il modulo o via e-mail, trattiamo i dati che fornisci (nome, indirizzo e-mail, azienda, messaggio e lingua preferita) esclusivamente per rispondere alla tua richiesta ed eventualmente preparare un'offerta. Gli invii del modulo vengono trasmessi tramite il servizio Formspree (Formspree, Inc., USA), che ce li inoltra via e-mail. Conserviamo i tuoi dati solo per il tempo necessario a gestire la richiesta o per quanto richiesto dalla legge. Ai sensi del GDPR, la base giuridica è l'art. 6, par. 1, lett. b (misure precontrattuali) e lett. f (legittimo interesse a rispondere alle richieste).",
+      "pr.s4.title": "4. Cookie, tracciamento e memoria locale",
+      "pr.s4.text": "Questo sito non utilizza cookie né strumenti di tracciamento o analisi. La lingua scelta viene salvata solo nella memoria locale del tuo browser, affinché il sito la ricordi. Questa informazione non lascia mai il tuo dispositivo.",
+      "pr.s5.title": "5. Contenuti di terzi",
+      "pr.s5.text": "Non carichiamo font, script o altri contenuti da server di terzi.",
+      "pr.s6.title": "6. I tuoi diritti",
+      "pr.s6.text": "Hai il diritto di ottenere informazioni sui tuoi dati personali, di farli rettificare o cancellare, di opporti al loro trattamento e, ove applicabile, di riceverli in un formato elettronico di uso comune. Per esercitare questi diritti scrivici a info@helvetiapixel.ch. Puoi inoltre presentare reclamo all'Incaricato federale della protezione dei dati e della trasparenza (IFPDT) o, se ti trovi nell'UE, all'autorità di controllo competente.",
+      "pr.s7.title": "7. Modifiche",
+      "pr.s7.text": "Possiamo aggiornare questa informativa in qualsiasi momento. Fa fede la versione pubblicata su questo sito."
+    }
+  };
+
+  Object.keys(legal).forEach(function (lang) {
+    Object.assign(window.I18N[lang], legal[lang]);
+  });
+})();
