@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Helvetia Pixel — Websites, Migrations, Automations & AI | Switzerland</title>
-  <meta name="description" content="Swiss digital agency: website design and development, hosting, website migrations, business automations and AI implementations. EN · DE · FR · IT.">
-  <meta property="og:title" content="Helvetia Pixel — Digital Agency, Switzerland">
-  <meta property="og:description" content="Websites. Migrations. Automations. AI. Built with Swiss precision.">
+  <title>Helvetia Pixel — Safe website modernisation, migrations &amp; automation | Lenzburg</title>
+  <meta name="description" content="Family-run digital agency in Lenzburg. We modernise websites and processes for Swiss SMEs — carefully planned, thoroughly tested, privacy-first.">
+  <meta property="og:title" content="Helvetia Pixel — Safe digital modernisation for Swiss SMEs">
+  <meta property="og:description" content="Websites, migrations and automations — planned carefully, delivered with responsibility. Lenzburg, Switzerland.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://helvetiapixel.ch/">
   <link rel="canonical" href="https://helvetiapixel.ch/">
@@ -30,10 +30,9 @@
     <nav class="main-nav" id="main-nav" aria-label="Main">
       <a href="#services" data-i18n="nav.services">Services</a>
       <a href="#migrations" data-i18n="nav.migrations">Migrations</a>
-      <a href="#automations" data-i18n="nav.automations">Automations</a>
-      <a href="#ai" data-i18n="nav.ai">AI</a>
+      <a href="#process" data-i18n="nav.approach">Approach</a>
       <a href="#work" data-i18n="nav.work">Work</a>
-      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#team" data-i18n="nav.team">Team</a>
     </nav>
 
     <div class="header-actions">
@@ -57,13 +56,19 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <h1 data-i18n="hero.title">Websites. Migrations.<br>Automations. AI.</h1>
-        <p class="lead" data-i18n="hero.lead">Digital solutions built with Swiss precision for ambitious companies.</p>
-        <p data-i18n="hero.text">We design, build and optimise digital systems that are secure, scalable and made to perform — in Switzerland and beyond.</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Digital agency · Lenzburg, Switzerland</p>
+        <h1 data-i18n="hero.title">Modernise your digital business.<br>Safely.</h1>
+        <p class="lead" data-i18n="hero.lead">Websites, migrations and automations for Swiss SMEs — planned carefully, delivered with responsibility.</p>
+        <p data-i18n="hero.text">We modernise websites and processes without chaos, unplanned downtime or lost search rankings. We take ownership of the risky parts, use AI only where it measurably helps, and you always speak directly with the people doing the work.</p>
         <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary"><span data-i18n="hero.cta1">Start a project</span> <span aria-hidden="true">→</span></a>
-          <a href="#services" class="btn btn-outline" data-i18n="hero.cta2">Explore services</a>
+          <a href="#contact" class="btn btn-primary"><span data-i18n="hero.cta1">Book a free assessment</span> <span aria-hidden="true">→</span></a>
+          <a href="#process" class="btn btn-outline" data-i18n="hero.cta2">How we work</a>
         </div>
+        <ul class="hero-trust">
+          <li data-i18n="hero.trust1">Family-run in Lenzburg</li>
+          <li data-i18n="hero.trust2">nDSG &amp; GDPR</li>
+          <li>EN · DE · FR · IT</li>
+        </ul>
       </div>
 
       <div class="hero-visual" aria-hidden="true">
@@ -89,18 +94,21 @@
             </svg>
             <div class="browser-copy">
               <h3 data-i18n="mock.title">Precision meets performance.</h3>
-              <p data-i18n="mock.text">Swiss websites and AI-powered systems that drive real business impact.</p>
+              <p data-i18n="mock.text">Modern websites, carefully migrated and thoroughly tested.</p>
               <span class="btn btn-primary btn-xs" data-i18n="mock.cta">Discover how</span>
             </div>
-            <div class="float-card ai-card">
-              <div class="fc-head"><span data-i18n="mock.aiTitle">AI Assistant</span><span class="sparkle">✦</span></div>
-              <p data-i18n="mock.aiQ">How can I help you today?</p>
-              <div class="fake-input" data-i18n="mock.aiInput">Ask anything…</div>
+            <div class="float-card check-card">
+              <div class="fc-head"><span data-i18n="mock.checkTitle">Migration checklist</span></div>
+              <ul class="mini-checks">
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="mock.check1">Redirects mapped</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="mock.check2">Staging approved</span></li>
+                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i18n="mock.check3">Rollback plan ready</span></li>
+              </ul>
             </div>
             <div class="float-card auto-card">
               <div>
-                <small data-i18n="mock.autoTitle">Automation</small>
-                <p data-i18n="mock.autoText">Invoice processing automated</p>
+                <small data-i18n="mock.liveTitle">Go-live</small>
+                <p data-i18n="mock.liveText">Monitoring active</p>
               </div>
               <span class="check">✓</span>
             </div>
@@ -110,73 +118,96 @@
     </div>
   </section>
 
-  <!-- TECH STRIP -->
-  <section class="trust">
-    <div class="container">
-      <p class="trust-title" data-i18n="trust.title">Technologies we work with</p>
-      <ul class="trust-list">
-        <li>WordPress</li><li>Shopify</li><li>Next.js</li><li>Azure</li><li>Terraform</li><li>Kubernetes</li><li>GitHub Actions</li><li>n8n</li><li>OpenAI</li><li>Playwright</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
+  <!-- SERVICES: three paths -->
   <section class="services" id="services">
     <div class="container">
       <div class="section-head">
-        <h2 data-i18n="services.title">What we do</h2>
-        <p data-i18n="services.intro">End-to-end digital services — from the first sketch to hosting, automation and AI.</p>
+        <h2 data-i18n="services.title">Three ways we help</h2>
+        <p data-i18n="services.intro">Most projects follow one of three paths. Many clients start with one and add the others over time.</p>
       </div>
-      <div class="cards">
-        <article class="card" id="design">
+      <div class="paths">
+        <article class="path" id="web">
           <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M8 20h8M12 16v4M6 8h7M6 11h4"/></svg></div>
-          <h3 data-i18n="s1.title">Website Design & Build</h3>
-          <p data-i18n="s1.text">Custom, conversion-focused websites built with clean code, fast performance and multilingual content from day one.</p>
-          <a href="#contact" class="more"><span data-i18n="common.more">Learn more</span> →</a>
+          <h3 data-i18n="path1.title">Website modernisation</h3>
+          <p class="path-tagline" data-i18n="path1.tagline">A website that works as reliably as your team.</p>
+          <p data-i18n="path1.text">New websites and redesigns for companies whose current site no longer keeps up — fast, accessible, multilingual and easy to maintain.</p>
+          <ul class="checks">
+            <li data-i18n="path1.b1">New websites and redesigns</li>
+            <li data-i18n="path1.b2">Multilingual setup (EN · DE · FR · IT)</li>
+            <li data-i18n="path1.b3">Hosting in Switzerland or the EU, with updates and backups</li>
+            <li data-i18n="path1.b4">Performance, accessibility and technical SEO</li>
+          </ul>
+          <a href="#contact" class="more" data-service="Website modernisation"><span data-i18n="path1.cta">Discuss your website</span> →</a>
         </article>
-        <article class="card" id="hosting">
-          <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="6" rx="1.5"/><rect x="4" y="14" width="16" height="6" rx="1.5"/><path d="M8 7h.01M8 17h.01M12 7h4M12 17h4"/></svg></div>
-          <h3 data-i18n="s2.title">Hosting & Care</h3>
-          <p data-i18n="s2.text">Secure, monitored hosting in Switzerland or the EU, with backups, SSL, updates and a support contact who speaks your language.</p>
-          <a href="#contact" class="more"><span data-i18n="common.more">Learn more</span> →</a>
-        </article>
-        <article class="card" id="migrations">
+        <article class="path featured" id="migrations">
+          <span class="badge" data-i18n="path2.badge">Our speciality</span>
           <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1-.6-7.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1 0 9"/><path d="M12 12v8M9 15l3-3 3 3"/></svg></div>
-          <h3 data-i18n="s3.title">Website Migrations</h3>
-          <p data-i18n="s3.text">Seamless migrations between platforms and hosts with zero downtime, full content transfer and preserved SEO rankings.</p>
-          <a href="#contact" class="more"><span data-i18n="common.more">Learn more</span> →</a>
+          <h3 data-i18n="path2.title">Safe migrations</h3>
+          <p class="path-tagline" data-i18n="path2.tagline">Change platforms without losing what you've built.</p>
+          <p data-i18n="path2.text">Moving to a new CMS, shop system, host or cloud is where most things go wrong. We plan every migration in detail and take responsibility for the outcome.</p>
+          <ul class="checks">
+            <li data-i18n="path2.b1">Full inventory of content, URLs and integrations</li>
+            <li data-i18n="path2.b2">301 redirect mapping to protect your search rankings</li>
+            <li data-i18n="path2.b3">Staging, testing and a rollback plan before go-live</li>
+            <li data-i18n="path2.b4">Launch at low-traffic times, followed by 30 days of monitoring</li>
+          </ul>
+          <a href="#contact" class="more" data-service="Safe migration"><span data-i18n="path2.cta">Plan your migration</span> →</a>
         </article>
-        <article class="card" id="automations">
+        <article class="path" id="automations">
           <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/><path d="M12 7v5M6 17v-2.5h12V17M12 12v2.5"/></svg></div>
-          <h3 data-i18n="s4.title">Automations</h3>
-          <p data-i18n="s4.text">Streamline operations with workflows that connect your tools — invoices, CRM, e-mail and reporting — saving hours every week.</p>
-          <a href="#contact" class="more"><span data-i18n="common.more">Learn more</span> →</a>
+          <h3 data-i18n="path3.title">Automations &amp; practical AI</h3>
+          <p class="path-tagline" data-i18n="path3.tagline">Less manual work — only where it pays off.</p>
+          <p data-i18n="path3.text">We connect your tools and automate repetitive tasks. We recommend AI only where it brings measurable value. If a simple workflow does the job, that's what we build.</p>
+          <ul class="checks">
+            <li data-i18n="path3.b1">Process review: what is actually worth automating</li>
+            <li data-i18n="path3.b2">Workflows between CRM, accounting, e-mail and forms</li>
+            <li data-i18n="path3.b3">AI for documents, internal knowledge and customer enquiries</li>
+            <li data-i18n="path3.b4">Data kept in Switzerland or the EU wherever possible</li>
+          </ul>
+          <a href="#contact" class="more" data-service="Automation & AI"><span data-i18n="path3.cta">Review your processes</span> →</a>
         </article>
-        <article class="card" id="ai">
-          <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M18 15l.9 2.1L21 18l-2.1.9L18 21l-.9-2.1L15 18l2.1-.9z"/></svg></div>
-          <h3 data-i18n="s5.title">AI Implementations</h3>
-          <p data-i18n="s5.text">Practical AI that delivers: chat assistants, document processing and internal knowledge tools — privacy-aware and nDSG-compliant.</p>
-          <a href="#contact" class="more"><span data-i18n="common.more">Learn more</span> →</a>
-        </article>
-        <article class="card card-cta">
-          <h3 data-i18n="s6.title">Not sure where to start?</h3>
-          <p data-i18n="s6.text">Book a free 30-minute consultation. We'll look at your current setup and suggest the next best step.</p>
-          <a href="#contact" class="btn btn-light btn-sm" data-i18n="s6.cta">Book a free call</a>
-        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-i18n="why.title">Why Helvetia Pixel</h2>
+        <p data-i18n="why.intro">We are a small team on purpose. It allows us to take real responsibility for every project.</p>
+      </div>
+      <div class="values">
+        <div class="value"><h3 data-i18n="why1.title">We own the risk</h3><p data-i18n="why1.text">We plan for what could go wrong, and we stand behind our work. Every migration comes with a tested rollback plan.</p></div>
+        <div class="value"><h3 data-i18n="why2.title">Tested before launch</h3><p data-i18n="why2.text">Every release is checked by an ISTQB-certified QA engineer across browsers, devices and languages.</p></div>
+        <div class="value"><h3 data-i18n="why3.title">AI with judgement</h3><p data-i18n="why3.text">We'll tell you honestly when AI isn't the answer. Technology has to earn its place in your processes.</p></div>
+        <div class="value"><h3 data-i18n="why4.title">Privacy by default</h3><p data-i18n="why4.text">Built for the Swiss nDSG and the EU GDPR. No unnecessary tracking; data hosted in Switzerland or the EU.</p></div>
+        <div class="value"><h3 data-i18n="why5.title">Local and personal</h3><p data-i18n="why5.text">Based in Lenzburg, Aargau. You work directly with Michał and Barbara — no account managers, no handovers.</p></div>
+        <div class="value"><h3 data-i18n="why6.title">Four languages</h3><p data-i18n="why6.text">Websites and content in German, French, Italian and English, for audiences across Switzerland.</p></div>
       </div>
     </div>
   </section>
 
   <!-- PROCESS -->
   <section class="process" id="process">
-    <div class="container process-inner">
-      <h2 data-i18n="process.title">Our Process</h2>
+    <div class="container">
+      <h2 data-i18n="process.title">How we work</h2>
       <ol class="steps">
-        <li><span class="num">1</span><div><h3 data-i18n="p1.title">Discover</h3><p data-i18n="p1.text">We learn about your goals, challenges and vision.</p></div></li>
-        <li><span class="num">2</span><div><h3 data-i18n="p2.title">Plan</h3><p data-i18n="p2.text">We design the right solution and migration strategy.</p></div></li>
-        <li><span class="num">3</span><div><h3 data-i18n="p3.title">Build</h3><p data-i18n="p3.text">We develop with precision. Every release is tested by an ISTQB-certified QA engineer.</p></div></li>
-        <li><span class="num">4</span><div><h3 data-i18n="p4.title">Launch & Optimise</h3><p data-i18n="p4.text">We launch smoothly and support your growth long-term.</p></div></li>
+        <li><span class="num">1</span><div><h3 data-i18n="p1.title">Understand</h3><p data-i18n="p1.text">We look at your current setup, goals and risks before proposing anything. You get an honest assessment, even if the answer is “keep what you have”.</p></div></li>
+        <li><span class="num">2</span><div><h3 data-i18n="p2.title">Plan</h3><p data-i18n="p2.text">A clear scope, a fixed-price quote and a timeline. For migrations, a detailed plan including redirects and a rollback strategy.</p></div></li>
+        <li><span class="num">3</span><div><h3 data-i18n="p3.title">Build &amp; test</h3><p data-i18n="p3.text">We build in a staging environment you can review at any time. Nothing goes live until it has passed QA.</p></div></li>
+        <li><span class="num">4</span><div><h3 data-i18n="p4.title">Launch &amp; support</h3><p data-i18n="p4.text">A calm go-live, close monitoring afterwards, and ongoing care if you want it.</p></div></li>
       </ol>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust-title" data-i18n="tools.title">Tools we work with</p>
+      <ul class="trust-list">
+        <li>WordPress</li><li>Shopify</li><li>Next.js</li><li>Azure</li><li>Terraform</li><li>Kubernetes</li><li>GitHub Actions</li><li>n8n</li><li>OpenAI</li><li>Playwright</li>
+      </ul>
     </div>
   </section>
 
@@ -184,8 +215,8 @@
   <section class="work" id="work">
     <div class="container work-inner">
       <div class="work-intro">
-        <h2 data-i18n="work.title">Selected Work</h2>
-        <p data-i18n="work.text">Products and websites we designed, built and launched ourselves.</p>
+        <h2 data-i18n="work.title">Selected work</h2>
+        <p data-i18n="work.text">We don't show invented case studies. This is what we have built and run ourselves.</p>
         <a href="#contact" class="more"><span data-i18n="work.all">Discuss your project</span> →</a>
       </div>
       <div class="work-cards">
@@ -210,25 +241,9 @@
           <div>
             <h3 data-i18n="w3.title">Portfolio websites</h3>
             <p><span data-i18n="w3.text">Fast, clean personal websites for IT professionals:</span> <a class="inline-link" href="https://michaldemczyszak.com" target="_blank" rel="noopener">michaldemczyszak.com</a>, <a class="inline-link" href="https://barbarademczyszak.com" target="_blank" rel="noopener">barbarademczyszak.com</a></p>
-            <small data-i18n="w3.tag">Website Design & Build</small>
+            <small data-i18n="w3.tag">Website Design &amp; Build</small>
           </div>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container">
-      <div class="section-head">
-        <h2 data-i18n="about.title">Why Helvetia Pixel</h2>
-        <p data-i18n="about.intro">A Swiss digital partner that combines craftsmanship with modern technology.</p>
-      </div>
-      <div class="values">
-        <div class="value"><h3 data-i18n="v1.title">Swiss quality</h3><p data-i18n="v1.text">Reliable, precise work with clear timelines and transparent fixed-price quotes.</p></div>
-        <div class="value"><h3 data-i18n="v2.title">Four languages</h3><p data-i18n="v2.text">We work and write in English, German, French and Italian — for all of Switzerland.</p></div>
-        <div class="value"><h3 data-i18n="v3.title">Privacy first</h3><p data-i18n="v3.text">Solutions designed for the Swiss nDSG and the EU GDPR, with data hosted in Switzerland or the EU.</p></div>
-        <div class="value"><h3 data-i18n="v4.title">Long-term partner</h3><p data-i18n="v4.text">After launch we stay: hosting, maintenance, improvements and new automations.</p></div>
       </div>
     </div>
   </section>
@@ -238,14 +253,14 @@
     <div class="container">
       <div class="section-head">
         <h2 data-i18n="team.title">The people behind Helvetia Pixel</h2>
-        <p data-i18n="team.intro">A small, family-run team from Lenzburg. You always talk directly to the people doing the work.</p>
+        <p data-i18n="team.intro">Helvetia Pixel is run by Michał and Barbara Demczyszak in Lenzburg. Two specialists, one shared standard: do it properly.</p>
       </div>
       <div class="team-cards">
         <article class="person">
           <img class="avatar" src="assets/img/team/michal.jpg" alt="Michał Demczyszak" width="112" height="112" loading="lazy">
           <div class="person-body">
             <h3>Michał Demczyszak</h3>
-            <p class="person-role" data-i18n="team.m.role">Co-founder · Cloud & DevOps Engineer</p>
+            <p class="person-role" data-i18n="team.m.role">Co-founder · Cloud &amp; DevOps Engineer</p>
             <p data-i18n="team.m.text">Designs and automates cloud infrastructure on Azure, builds CI/CD pipelines and modernises legacy systems for enterprise and finance. At Helvetia Pixel he leads hosting, migrations, automations and AI.</p>
             <ul class="tags"><li>Azure</li><li>Terraform</li><li>Kubernetes</li><li>GitHub Actions</li><li>Python</li></ul>
             <p class="person-links"><a href="https://michaldemczyszak.com" target="_blank" rel="noopener">michaldemczyszak.com ↗</a><a href="https://www.linkedin.com/in/michaldemczyszak" target="_blank" rel="noopener">LinkedIn ↗</a></p>
@@ -269,9 +284,9 @@
   <section class="contact" id="contact">
     <div class="container contact-inner">
       <div class="contact-copy">
-        <h2 data-i18n="contact.title">Let's build something exceptional together.</h2>
-        <p data-i18n="contact.text">Have a project in mind? We'd love to hear from you.</p>
-        <p class="muted"><span data-i18n="contact.based">Based in Switzerland</span> • <span data-i18n="contact.lang">Speaking your language</span></p>
+        <h2 data-i18n="contact.title">Tell us what you'd like to change.</h2>
+        <p data-i18n="contact.text">Describe your project or challenge in a few sentences. We'll reply within one business day with an honest first assessment — free and without obligation.</p>
+        <p class="muted" data-i18n="contact.location">Lenzburg, Switzerland</p>
         <p><a class="mail-link" href="mailto:info@helvetiapixel.ch">info@helvetiapixel.ch</a></p>
       </div>
 
@@ -282,11 +297,10 @@
         <div class="field">
           <label for="f-service" data-i18n="form.service">Service</label>
           <select id="f-service" name="service">
-            <option value="Website Design & Build" data-i18n="s1.title">Website Design & Build</option>
-            <option value="Hosting & Care" data-i18n="s2.title">Hosting & Care</option>
-            <option value="Website Migration" data-i18n="s3.title">Website Migrations</option>
-            <option value="Automations" data-i18n="s4.title">Automations</option>
-            <option value="AI Implementations" data-i18n="s5.title">AI Implementations</option>
+            <option value="Website modernisation" data-i18n="form.opt.web">Website modernisation</option>
+            <option value="Safe migration" data-i18n="form.opt.mig">Safe migration</option>
+            <option value="Automation & AI" data-i18n="form.opt.auto">Automation &amp; AI</option>
+            <option value="Hosting & care" data-i18n="form.opt.host">Hosting &amp; care</option>
             <option value="Other" data-i18n="form.other">Other / not sure yet</option>
           </select>
         </div>
@@ -327,20 +341,18 @@
       <a href="#team" data-i18n="footer.team">Team</a>
       <a href="#about" data-i18n="nav.about">About</a>
       <a href="#work" data-i18n="nav.work">Work</a>
-      <a href="#process" data-i18n="process.title">Our Process</a>
+      <a href="#process" data-i18n="process.title">How we work</a>
       <a href="#contact" data-i18n="footer.contact">Contact</a>
     </div>
     <div class="footer-col">
       <h4 data-i18n="nav.services">Services</h4>
-      <a href="#design" data-i18n="s1.title">Website Design & Build</a>
-      <a href="#hosting" data-i18n="s2.title">Hosting & Care</a>
-      <a href="#migrations" data-i18n="s3.title">Website Migrations</a>
-      <a href="#automations" data-i18n="s4.title">Automations</a>
-      <a href="#ai" data-i18n="s5.title">AI Implementations</a>
+      <a href="#web" data-i18n="path1.title">Website modernisation</a>
+      <a href="#migrations" data-i18n="path2.title">Safe migrations</a>
+      <a href="#automations" data-i18n="path3.title">Automations &amp; practical AI</a>
     </div>
     <div class="footer-contact">
       <a href="mailto:info@helvetiapixel.ch">info@helvetiapixel.ch</a>
-      <p class="muted small" data-i18n="footer.location">Switzerland</p>
+      <p class="muted small" data-i18n="footer.location">Lenzburg, Switzerland</p>
       <div class="lang-switch lang-switch-footer" role="group" aria-label="Language">
         <button type="button" data-lang="en">EN</button>
         <button type="button" data-lang="de">DE</button>

@@ -105,6 +105,14 @@
   var submitBtn = form.querySelector('button[type="submit"]');
   var submitLabel = submitBtn.querySelector("[data-i18n]");
 
+  // "Plan your migration" etc. pre-select the matching service in the form
+  var serviceSelect = document.getElementById("f-service");
+  document.querySelectorAll("[data-service]").forEach(function (link) {
+    link.addEventListener("click", function () {
+      serviceSelect.value = link.getAttribute("data-service");
+    });
+  });
+
   document.getElementById("f-lang").addEventListener("change", function () {
     this.dataset.touched = "1";
   });
