@@ -47,7 +47,7 @@ GitHub Pages can't process forms. Two modes:
 
 ## Before going live
 
-- Fill in the yellow `[placeholders]` in `impressum.html` and `privacy.html`: owner / legal entity name, street, postcode and city, and the UID (remove the UID line if you're not in the commercial register).
+- If Helvetia Pixel gets entered in the commercial register, add the UID (CHE-xxx.xxx.xxx) to the address block in `impressum.html`.
 - The privacy policy says contact-form submissions go through Formspree. If you don't set up Formspree, remove that sentence from `pr.s3.text` in `assets/js/i18n-legal.js` (all four languages). If you add analytics or any other external service, update the policy as well.
 - Have the legal texts checked by a professional if in doubt. They are a sensible starting template, not legal advice.
 - Replace the example projects in "Selected Work" with real case studies when you have them.
