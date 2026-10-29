@@ -77,6 +77,59 @@
     btn.addEventListener("click", function () { applyLang(btn.getAttribute("data-lang")); });
   });
 
+  /* ---------- Analytics consent ----------
+     Google Analytics (loader in each page's <head>) only runs after "Accept". */
+  var banner = document.createElement("div");
+  banner.className = "consent";
+  banner.setAttribute("role", "region");
+  banner.setAttribute("aria-label", "Cookies");
+  banner.hidden = true;
+  banner.innerHTML =
+    '<p><span data-i18n="consent.text"></span> <a href="privacy.html" data-i18n="consent.more"></a></p>' +
+    '<div class="consent-actions">' +
+    '<button type="button" class="btn btn-outline btn-sm" data-consent="denied" data-i18n="consent.decline"></button>' +
+    '<button type="button" class="btn btn-primary btn-sm" data-consent="granted" data-i18n="consent.accept"></button>' +
+    "</div>";
+  document.body.appendChild(banner);
+
+  function getConsent() {
+    try { return localStorage.getItem("hp-consent"); } catch (e) { return null; }
+  }
+
+  function clearAnalyticsCookies() {
+    document.cookie.split(";").forEach(function (c) {
+      var name = c.split("=")[0].trim();
+      if (name.indexOf("_ga") !== 0) return;
+      ["", "; domain=" + location.hostname, "; domain=." + location.hostname.replace(/^www\./, "")].forEach(function (d) {
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + d;
+      });
+    });
+  }
+
+  banner.addEventListener("click", function (e) {
+    var choice = e.target.getAttribute("data-consent");
+    if (!choice) return;
+    var previous = getConsent();
+    try { localStorage.setItem("hp-consent", choice); } catch (err) {}
+    banner.hidden = true;
+    if (choice === "granted") {
+      window.loadGoogleTag();
+    } else if (previous === "granted") {
+      // Withdrawn: remove cookies and reload so the already-loaded tag stops
+      clearAnalyticsCookies();
+      location.reload();
+    }
+  });
+
+  document.querySelectorAll("[data-consent-open]").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      banner.hidden = false;
+    });
+  });
+
+  if (!getConsent()) banner.hidden = false;
+
   applyLang(detectLang());
 
   /* ---------- Mobile nav ---------- */

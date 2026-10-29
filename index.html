@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js). Loads only after the visitor accepts analytics cookies (banner in main.js). -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.loadGoogleTag = function () {
+      if (window.googleTagLoaded) return;
+      window.googleTagLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-EDLVFH90HC';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-EDLVFH90HC');
+    };
+    try { if (localStorage.getItem('hp-consent') === 'granted') window.loadGoogleTag(); } catch (e) {}
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Helvetia Pixel — Safe website modernisation, migrations &amp; automation | Lenzburg</title>
@@ -347,7 +363,7 @@
     <div class="footer-brand">
       <a href="#top" class="logo"><span class="logo-mark" aria-hidden="true"></span><span class="logo-text"><strong>HELVETIA PIXEL</strong></span></a>
       <p class="muted small">© <span id="year">2026</span> Helvetia Pixel. <span data-i18n="footer.rights">All rights reserved.</span></p>
-      <p class="footer-legal small"><a href="impressum.html" data-i18n="footer.impressum">Legal notice</a> · <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a></p>
+      <p class="footer-legal small"><a href="impressum.html" data-i18n="footer.impressum">Legal notice</a> · <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a> · <a href="#" data-consent-open data-i18n="footer.cookies">Cookie settings</a></p>
     </div>
     <div class="footer-col">
       <h4 data-i18n="footer.company">Company</h4>

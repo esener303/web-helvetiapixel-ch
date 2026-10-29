@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js). Loads only after the visitor accepts analytics cookies (banner in main.js). -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.loadGoogleTag = function () {
+      if (window.googleTagLoaded) return;
+      window.googleTagLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-EDLVFH90HC';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-EDLVFH90HC');
+    };
+    try { if (localStorage.getItem('hp-consent') === 'granted') window.loadGoogleTag(); } catch (e) {}
+  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy policy — Helvetia Pixel</title>
@@ -55,10 +71,10 @@
     <p data-i18n="pr.s2.text">This website is hosted on GitHub Pages, a service of GitHub, Inc. (USA). When you visit the site, GitHub automatically processes technical data such as your IP address, the date and time of access and your browser information in order to deliver the website and protect it against abuse. This data may be processed in the USA. Such transfers rely on appropriate safeguards, such as the Swiss-U.S. Data Privacy Framework or standard contractual clauses.</p>
     <h2 data-i18n="pr.s3.title">3. Contact form and e-mail</h2>
     <p data-i18n="pr.s3.text">When you contact us via the contact form or by e-mail, we process the data you provide (name, e-mail address, company, message and preferred language) solely to answer your inquiry and, where applicable, to prepare an offer. Form submissions are transmitted via the form service Formspree (Formspree, Inc., USA), which forwards them to us by e-mail. We keep your data only as long as necessary to handle your inquiry or as required by law. Under the GDPR, the legal basis is Art. 6(1)(b) (pre-contractual measures) and Art. 6(1)(f) (legitimate interest in answering inquiries).</p>
-    <h2 data-i18n="pr.s4.title">4. Cookies, tracking and local storage</h2>
-    <p data-i18n="pr.s4.text">This website does not use cookies, tracking or analytics tools. Your language choice is stored only in your browser's local storage so that the site remembers it. This information never leaves your device.</p>
+    <h2 data-i18n="pr.s4.title">4. Cookies, analytics and local storage</h2>
+    <p data-i18n="pr.s4.text">This website uses Google Analytics 4, a web analytics service of Google Ireland Limited (Ireland) and Google LLC (USA), but only if you agree via the cookie banner. Google Analytics then sets cookies and collects information about your visit, such as the pages you view, how long you stay, your approximate location, your device and browser, and the website that referred you. Google Analytics 4 does not log or store IP addresses. The data may be transferred to and processed in the USA; such transfers rely on the Swiss-U.S. and EU-U.S. Data Privacy Framework and standard contractual clauses. The data is stored for up to 2 months. The legal basis under the GDPR is your consent (Art. 6(1)(a)). You can withdraw your consent at any time with immediate effect via &quot;Cookie settings&quot; in the footer. If you decline, Google Analytics is not loaded and no cookies are set. Your language choice and your cookie decision are stored only in your browser's local storage and never leave your device.</p>
     <h2 data-i18n="pr.s5.title">5. Third-party content</h2>
-    <p data-i18n="pr.s5.text">We do not load fonts, scripts or other content from third-party servers.</p>
+    <p data-i18n="pr.s5.text">We do not load fonts, scripts or other content from third-party servers, with the exception of Google Analytics if you have consented to it (see section 4).</p>
     <h2 data-i18n="pr.s6.title">6. Your rights</h2>
     <p data-i18n="pr.s6.text">You have the right to request information about your personal data, to have it corrected or deleted, to object to its processing and, where applicable, to receive your data in a common electronic format. To exercise these rights, contact us at info@helvetiapixel.ch. You can also lodge a complaint with the Federal Data Protection and Information Commissioner (FDPIC) or, if you are in the EU, with your local data protection authority.</p>
     <h2 data-i18n="pr.s7.title">7. Changes</h2>
@@ -83,6 +99,7 @@
       <h4 data-i18n="footer.legal">Legal</h4>
       <a href="impressum.html" data-i18n="footer.impressum">Legal notice</a>
       <a href="privacy.html" data-i18n="footer.privacy">Privacy policy</a>
+      <a href="#" data-consent-open data-i18n="footer.cookies">Cookie settings</a>
     </div>
     <div class="footer-contact">
       <a href="mailto:info@helvetiapixel.ch">info@helvetiapixel.ch</a>
