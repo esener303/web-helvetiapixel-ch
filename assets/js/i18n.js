@@ -4,6 +4,9 @@ window.I18N = {
   en: {
     "meta.title": "Helvetia Pixel — Safe website modernisation, migrations & automation | Lenzburg",
     "meta.description": "Family-run digital agency in Lenzburg. We modernise websites and processes for Swiss SMEs — carefully planned, thoroughly tested, privacy-first.",
+    "og.title": "Helvetia Pixel — Safe digital modernisation for Swiss SMEs",
+    "og.description": "Websites, migrations and automations — planned carefully, delivered with responsibility. Lenzburg, Switzerland.",
+    "og.imageAlt": "Helvetia Pixel — Your digital modernisation. Our responsibility.",
     "nav.services": "Services",
     "nav.migrations": "Migrations",
     "nav.approach": "Approach",
@@ -131,6 +134,9 @@ window.I18N = {
   de: {
     "meta.title": "Helvetia Pixel — Sichere Website-Modernisierung, Migrationen & Automation | Lenzburg",
     "meta.description": "Familiengeführte Digitalagentur in Lenzburg. Wir modernisieren Websites und Prozesse für Schweizer KMU — sorgfältig geplant, gründlich getestet, datenschutzkonform.",
+    "og.title": "Helvetia Pixel — Sichere digitale Modernisierung für Schweizer KMU",
+    "og.description": "Websites, Migrationen und Automationen — sorgfältig geplant, verantwortungsvoll umgesetzt. Lenzburg, Schweiz.",
+    "og.imageAlt": "Helvetia Pixel — Ihre digitale Modernisierung. Unsere Verantwortung.",
     "nav.services": "Leistungen",
     "nav.migrations": "Migrationen",
     "nav.approach": "Vorgehen",
@@ -258,6 +264,9 @@ window.I18N = {
   fr: {
     "meta.title": "Helvetia Pixel — Modernisation web sécurisée, migrations & automatisation | Lenzbourg",
     "meta.description": "Agence digitale familiale à Lenzbourg. Nous modernisons sites web et processus pour les PME suisses — planifiés avec soin, testés rigoureusement, respectueux de la protection des données.",
+    "og.title": "Helvetia Pixel — Modernisation digitale sécurisée pour les PME suisses",
+    "og.description": "Sites web, migrations et automatisations — planifiés avec soin, réalisés avec responsabilité. Lenzbourg, Suisse.",
+    "og.imageAlt": "Helvetia Pixel — Votre modernisation digitale. Notre responsabilité.",
     "nav.services": "Services",
     "nav.migrations": "Migrations",
     "nav.approach": "Méthode",
@@ -385,6 +394,9 @@ window.I18N = {
   it: {
     "meta.title": "Helvetia Pixel — Modernizzazione web sicura, migrazioni & automazione | Lenzburg",
     "meta.description": "Agenzia digitale a conduzione familiare a Lenzburg. Modernizziamo siti web e processi per le PMI svizzere — pianificati con cura, testati a fondo, nel rispetto della privacy.",
+    "og.title": "Helvetia Pixel — Modernizzazione digitale sicura per le PMI svizzere",
+    "og.description": "Siti web, migrazioni e automazioni — pianificati con cura, realizzati con responsabilità. Lenzburg, Svizzera.",
+    "og.imageAlt": "Helvetia Pixel — La tua modernizzazione. La nostra responsabilità.",
     "nav.services": "Servizi",
     "nav.migrations": "Migrazioni",
     "nav.approach": "Metodo",

@@ -1,19 +1,25 @@
 # helvetiapixel.ch
 
-Static one-page website for Helvetia Pixel (web design, hosting, migrations, automations, AI), in EN / DE / FR / IT. Hosted on GitHub Pages. No build step, no dependencies.
+Static one-page website for Helvetia Pixel (web design, hosting, migrations, automations, AI), in EN / DE / FR / IT. Hosted on GitHub Pages. No dependencies; one small Node script generates the language versions.
 
 ## Structure
 
 ```
-index.html            page markup (English default text)
-impressum.html        legal notice
-privacy.html          privacy policy (nDSG / GDPR)
-assets/css/styles.css styles
-assets/js/i18n.js     homepage translations (en, de, fr, it)
+src/index.html           homepage template (edit here)
+src/impressum.html       legal notice template
+src/privacy.html         privacy policy template (nDSG / GDPR)
+scripts/build.mjs        generates the static pages below from src/ + translations
+index.html, impressum.html, privacy.html   German pages (generated, default + x-default)
+en/, fr/, it/            English, French, Italian pages (generated)
+de/index.html            redirect stub: /de/ -> /
+sitemap.xml              generated, with hreflang alternates
+robots.txt
+assets/css/styles.css    styles
+assets/js/i18n.js        homepage translations (en, de, fr, it)
 assets/js/i18n-legal.js  translations for the legal pages and footer links
-assets/js/main.js     language switching, mobile menu, contact form
-assets/img/favicon.svg
-CNAME                 custom domain for GitHub Pages
+assets/js/main.js        consent banner, mobile menu, contact form
+assets/img/
+CNAME                    custom domain for GitHub Pages
 ```
 
 ## Local preview
@@ -24,9 +30,31 @@ python3 -m http.server 8000   # then open http://localhost:8000
 
 ## Languages
 
-- Language is picked from `?lang=xx`, then the visitor's saved choice, then the browser language, falling back to English.
-- To edit text, change `assets/js/i18n.js`. Every key must exist in all four languages.
-- German uses Swiss spelling (ss instead of ß).
+Every language is a real static page with its own URL, so search engines see translated content without running JavaScript:
+
+| Language | URL |
+|---|---|
+| German (default, x-default) | `https://helvetiapixel.ch/` |
+| English | `https://helvetiapixel.ch/en/` |
+| French | `https://helvetiapixel.ch/fr/` |
+| Italian | `https://helvetiapixel.ch/it/` |
+
+Each page has a self-referencing canonical, hreflang links to all versions plus `x-default`, and translated `<title>`, description and Open Graph tags.
+
+**Editing text:** change `assets/js/i18n.js` (or `i18n-legal.js`), or the markup in `src/`, then run:
+
+```sh
+node scripts/build.mjs           # regenerate all pages and sitemap.xml
+node scripts/build.mjs --check   # verify generated files are current (also runs in CI)
+```
+
+Never edit the generated HTML directly. The build fails if a key is missing in any language. German uses Swiss spelling (ss instead of ß).
+
+The default language is `DEFAULT_LANG` in `scripts/build.mjs`. The text in `src/` is only a placeholder; every page's text comes from the dictionaries.
+
+**Template conventions:** `data-i18n="key"` replaces an element's text (`\n` becomes `<br>`), `data-i18n-content="key"` replaces a meta tag's `content`, and `<body data-title-key>` picks the `<title>` key. `<!-- i18n:alternates -->` and `<!-- i18n:switch -->` are where the SEO head tags and the language switcher go.
+
+**Routing:** the language switcher uses plain links. On the German (root) pages only, a small script in `<head>` sends visitors to another language based on (1) a legacy `?lang=xx` URL, (2) a language they previously picked in the switcher, or (3) a French or Italian browser language. English is never chosen automatically, because Google renders pages with an English browser locale and must see `/` as served. GitHub Pages can't send server-side 301s, so old `?lang=` links use this JavaScript redirect instead.
 
 ## Contact form
 
